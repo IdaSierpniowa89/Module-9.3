@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="description" content="JS">
+  <meta name="author" content="Joanna Michalak">
+  <meta name="keywods" content="kurs, kodilla, js">
+  <title>Rock Paper Scissors</title>
+</head>
+  <body>
+    <div class="container" id="game2">
+      <button id="startgame">Let's Play!</button>
+      <br>
+      <br>
+      <div class="panel" id="gamepanel">
+        <div id="rounds"></div>
+         <br>
+        <div id="result"></div>
+        <div class="container" id="game">
+         <div class="icon player-move" id="rock" data-move="rock">
+             <i class="fa fa-hand-rock-o" ></i>
+          </div>
+          <div class="icon player-move" id="paper" data-move="paper">
+             <i class="fa fa-hand-paper-o" ></i>
+          </div>
+          <div class="icon player-move" id="scissors" data-move="scissors">
+             <i class="fa fa-hand-scissors-o" ></i>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div id="output"></div>
+    </div>
+
+    <div class="modals">
+     <div class="overlay" id="modal-overlay">
+      <div class="modal show-modal">
+        <a href="#" class="close">x</a>
+        <header>GAME OVER</header>
+        <div class="content" >
+          <p></p>
+        </div>
+        <div class="table"></div>
+      </div>
+  </div>
+    </div>
+
+<script src="script.js"></script>
+  </body>
+
+</html>
